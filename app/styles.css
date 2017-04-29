@@ -53,10 +53,10 @@
 }
 
 #die_color.red {
-    background-image: url("assets/monster_one_eye.png");
+    background-image: url("assets/color_red.png");
 }
 #die_color.purple {
-    background-image: url("assets/monster_two_eye.png");
+    background-image: url("assets/color_purple.png");
 }
 
 

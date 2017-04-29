@@ -1,4 +1,5 @@
-
+// svenja ist toll
+console.log("svenja ist toll");
 
 var starters = ["red", "blue", "yellow"]
 var changes = ["pattern", "color", "monster"];
