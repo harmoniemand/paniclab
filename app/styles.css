@@ -1,0 +1,64 @@
+
+
+#playground {
+    width:90vh;
+    height: 90vh;
+    border: solid 1px red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    margin-top: -45vh;
+    margin-left: -45vh;
+}
+
+.card {
+    width: 100px;
+    height: 90vh;
+
+    position: absolute;
+    top: 0;
+    left: 45%;
+}
+
+
+#dice {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 140px;
+    height: 140px;
+
+    border: solid 1px red;
+
+    margin-top: -70px;
+    margin-left: -70px;
+}
+
+.die {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#die_monster.oneeye {
+    background-image: url("assets/monster_one_eye.png");
+}
+#die_monster.twoeye {
+    background-image: url("assets/monster_two_eye.png");
+}
+
+#die_color.red {
+    background-image: url("assets/monster_one_eye.png");
+}
+#die_color.purple {
+    background-image: url("assets/monster_two_eye.png");
+}
+
+
+
+
