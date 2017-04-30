@@ -50,6 +50,17 @@
      background-image: url("assets/monster_blue_one_striped.png");
 }
 
+[pl-cardtype="direction"][pl-direction="red"] {
+     background-image: url("assets/direction_red.png");    
+}
+[pl-cardtype="direction"][pl-direction="blue"] {
+     background-image: url("assets/direction_blue.png");    
+}
+[pl-cardtype="direction"][pl-direction="yellow"] {
+     background-image: url("assets/direction_yellow.png");    
+}
+
+
 [pl-cardtype="change"][pl-change="pattern"] {
      background-image: url("assets/change_pattern.png");    
 }
@@ -77,13 +88,15 @@
 
     margin-top: -70px;
     margin-left: -70px;
+    
 }
 
 .die {
     display: inline-block;
     width: 70px;
     height: 70px;
-
+    float: right;
+    
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -98,8 +111,37 @@
 #die_color.red {
     background-image: url("assets/color_red.png");
 }
-#die_color.purple {
+#die_color.blue {
     background-image: url("assets/color_purple.png");
+}
+
+#die_pattern.dotted {
+    background-image: url("assets/die_pattern_dotted.png");
+}
+#die_pattern.striped {
+    background-image: url("assets/die_pattern_striped.png");
+}
+
+
+#die_direction.blue.left {
+    background-image: url("assets/die_direction_blue_left.png");
+}
+#die_direction.blue.right {
+    background-image: url("assets/die_direction_blue_right.png");
+}
+
+#die_direction.red.left {
+    background-image: url("assets/die_direction_red_left.png");
+}
+#die_direction.red.right {
+    background-image: url("assets/die_direction_red_right.png");
+}
+
+#die_direction.yellow.left {
+    background-image: url("assets/die_direction_yellow_left.png");
+}
+#die_direction.yellow.right {
+    background-image: url("assets/die_direction_yellow_right.png");
 }
 
 

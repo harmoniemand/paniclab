@@ -4,6 +4,7 @@ console.log("svenja ist toll");
 var starters = ["red", "blue", "yellow"]
 var change = ["pattern", "color", "monster"];
 var funnelCount = 3;
+var directions = ["left", "right"];
 
 var pattern = ["dotted", "striped"];
 var monster = ["oneeye", "twoeye"];
@@ -82,10 +83,23 @@ document.getElementById("die_monster").classList.add(monster[round_monster]);
 var round_color = Math.floor((Math.random() * color.length));
 document.getElementById("die_color").classList.add(color[round_color]);
 
+var round_pattern = Math.floor((Math.random() * pattern.length));
+document.getElementById("die_pattern").classList.add(pattern[round_pattern]);
+
+var round_direction = Math.floor((Math.random() * directions.length));
+var round_direction_color = Math.floor((Math.random() * starters.length));
+document.getElementById("die_direction").classList.add(directions[round_direction]);
+document.getElementById("die_direction").classList.add(starters[round_direction_color]);
+
 
 var cards = generateCards();
 
 var playground = document.getElementById("playground");
+
+for (let i = cards.length; i; i--) {
+    let j = Math.floor(Math.random() * i);
+    [cards[i - 1], cards[j]] = [cards[j], cards[i - 1]];
+}
 
 cards.forEach(function(card, index) {
     card.$element = document.createElement("div");
@@ -103,6 +117,12 @@ cards.forEach(function(card, index) {
         card.$element.setAttributeNode(attrChange);
     }
 
+    if (card.type == "direction") {
+        var attrDirection = document.createAttribute("pl-direction");
+        attrDirection.value  = card.color;
+        card.$element.setAttributeNode(attrDirection);
+    }
+
     if (card.type == "monster") {
         var attrMonster = document.createAttribute("pl-monster");
         attrMonster.value  = card.monster;
@@ -116,8 +136,6 @@ cards.forEach(function(card, index) {
         attrPattern.value = card.pattern;
         card.$element.setAttributeNode(attrPattern);
     }
-
-    card.$element.innerText = card.type;
 
     playground.appendChild(card.$element);
 });
