@@ -19,6 +19,49 @@
     position: absolute;
     top: 0;
     left: 45%;
+
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain
+}
+
+[pl-monster="twoeye"][pl-pattern="dotted"][pl-color="red"] {
+     background-image: url("assets/monster_red_two_dotted.png");
+}
+[pl-monster="oneeye"][pl-pattern="dotted"][pl-color="red"] {
+     background-image: url("assets/monster_red_one_dotted.png");
+}
+[pl-monster="twoeye"][pl-pattern="striped"][pl-color="red"] {
+     background-image: url("assets/monster_red_two_striped.png");
+}
+[pl-monster="oneeye"][pl-pattern="striped"][pl-color="red"] {
+     background-image: url("assets/monster_red_one_striped.png");
+}
+[pl-monster="twoeye"][pl-pattern="dotted"][pl-color="blue"] {
+     background-image: url("assets/monster_blue_two_dotted.png");
+}
+[pl-monster="oneeye"][pl-pattern="dotted"][pl-color="blue"] {
+     background-image: url("assets/monster_blue_one_dotted.png");
+}
+[pl-monster="twoeye"][pl-pattern="striped"][pl-color="blue"] {
+     background-image: url("assets/monster_blue_two_striped.png");
+}
+[pl-monster="oneeye"][pl-pattern="striped"][pl-color="blue"] {
+     background-image: url("assets/monster_blue_one_striped.png");
+}
+
+[pl-cardtype="change"][pl-change="pattern"] {
+     background-image: url("assets/change_pattern.png");    
+}
+[pl-cardtype="change"][pl-change="color"] {
+     background-image: url("assets/change_color.png");    
+}
+[pl-cardtype="change"][pl-change="monster"] {
+     background-image: url("assets/change_monster.png");    
+}
+
+[pl-cardtype="funnel"] {
+     background-image: url("assets/funnel.png");    
 }
 
 
@@ -41,7 +84,7 @@
     width: 70px;
     height: 70px;
 
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
